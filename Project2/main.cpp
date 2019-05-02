@@ -8,7 +8,7 @@ Vector color(Ray ray)
 {
 	Vector unit_direction = unit_vector(ray.direction());
 	float t = 0.5 * (unit_direction.y() + 1.0);
-	return (1.0 - t) * Vector(1.0, 1.0, 1.0) + t * Vector(0.0,0.0,0.0);
+	return (1.0 - t) * Vector(1.0, 1.0, 1.0) + t * Vector(0.1,0.0,0.0);
 }
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 	outtfile << "P3\n" << nx << " " << ny << "\n255\n";
 	#pragma endregion
 	
-	Camera camera(Vector(0, 0, 0), Vector(-2, -1, -1), Vector(0, 2, 0), Vector(4, 0, 0));
+	Camera camera(45,2.0f);
 	//from left to right
 	//from top to bottom
 	for (int y = 0; y < ny; y++)

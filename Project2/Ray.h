@@ -6,6 +6,8 @@ class Ray
 {
 public:
 	Ray() {}
+
+	//注意，第二个应该传的是方向方向方向。
 	Ray(const Vector& orgin, const Vector& direction) { o = orgin; d = direction; }
 	Vector origin() const { return o; }
 	Vector direction() const { return d; }
