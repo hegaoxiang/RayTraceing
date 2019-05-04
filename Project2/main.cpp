@@ -37,7 +37,7 @@ int main()
 	outtfile << "P3\n" << nx << " " << ny << "\n255\n";
 	#pragma endregion
 	
-	Camera camera(Vector(-2, 2, 1), Vector(0, 0, -1), Vector(0, 1, 0), 2, 2.0f);
+	Camera camera(Vector(0, 0, 0), Vector(-2, -1, -1), Vector(0, 2, 0), Vector(4, 0, 0));
 	//Vector orgin = Vector(0,0,0);
 	//Vector lower_left_corner = Vector(-2,-1,-1);
 	//Vector horizontal = Vector(4,0,0);
